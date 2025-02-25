@@ -23,15 +23,11 @@
          <nav class="pt-4 border-bottom">
             <ul class="nav justify-content-center nav-underline nav-fill">
                 <li class="nav-item">
-                    <a class="nav-link text-info" href="#frontend-projects">
-                        Frontend Projects
+                    <a class="nav-link text-info" href="#projects">
+                        Projects
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-info" href="#fullstack-projects">
-                        Full-Stack Projects
-                    </a>
-                </li>
+                
                 <li class="nav-item">
                     <a class="nav-link text-info" href="#about">
                         About
@@ -58,200 +54,49 @@
        
         </header>
       
-        <!-- Project Section -->
-         <section id="projects">
-            <h2>
-                Featured Projects – My Best Work
-            </h2>
+        <main class="container-fluid my-5">
+            <!-- Project Section -->
+            <section id="projects" class="py-5">
+                <h2 class="py-3 text-center display-4">
+                    Featured Projects – My Best Work
+                </h2>
+
+                <section class="card align-self-center p-3 text-bg-dark border-info">
+                    <select name="filter-projects" id="filter-projects" class="form-select text-center">
+                        <option value="All">All Featured Projects – My Best Works</option>
+                        <option value="Frontend Project">Frontend Projects – UI/UX & React-Focused Work</option>
+                        <option value="Full-Stack Project">Full-Stack Projects – Showcasing Complete Applications</option>
+                    </select>
+                </section>
             
-            <section id="frontend-projects">
-                <h3>
-                    Frontend Projects
-                </h3>
+                <section class="pt-5 row row-cols-1 row-cols-md-3 g-4" id="row">
+                    
                 
-                <div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://placehold.co/600x400?text=Hello\nWorld" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                        content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://placehold.co/600x400?text=Hello\nWorld" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                        content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://placehold.co/600x400?text=Hello\nWorld" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                        content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://placehold.co/600x400?text=Hello\nWorld" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                        content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://placehold.co/600x400?text=Hello\nWorld" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                        content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-
-                
-                
+                        
+                </section>
+            
             </section>
-
-
-            <section id="fullstack-projects">
-                <h3>
-                    Full-Stack Projects
-                </h3>
             
-                <div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://placehold.co/600x400?text=Hello\nWorld" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                        additional
-                                        content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://placehold.co/600x400?text=Hello\nWorld" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                        additional
-                                        content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://placehold.co/600x400?text=Hello\nWorld" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                        additional
-                                        content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://placehold.co/600x400?text=Hello\nWorld" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                        additional
-                                        content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-
-         </section>
-
-         <!-- GitHub Contributions – My Open-Source Work -->
-        <section>
-            <h2>
-                GitHub Contributions – My Open-Source Work
-            </h2>
+            <!-- GitHub Contributions – My Open-Source Work -->
+            <section>
+                <h2>
+                    GitHub Contributions – My Open-Source Work
+                </h2>
             
                 <a href="https://github.com/yMeeraki">GitHub Profile</a>
-        
-        </section>
-
-        <!-- About -->
-        <section id="about">
-            <h2>
-                About Me – Who I Am & What I Do
-            </h2>
-            <p>
-                Hi, I’m <span>Yukti</span>, a <span>Frontend-Focused Full-Stack Developer</span> passionate about <span>React.js, UI/UX, and performance
-                optimization.</span>
-                
+            
+            </section>
+            
+            <!-- About -->
+            <section id="about">
+                <h2>
+                    About Me – Who I Am & What I Do
+                </h2>
+                <p>
+                    Hi, I’m <span>Yukti</span>, a <span>Frontend-Focused Full-Stack Developer</span> passionate about
+                    <span>React.js, UI/UX, and performance
+                        optimization.</span>
+            
                 <ul>
                     <li>
                         <strong>React.js & Next.js Expert – </strong>Building interactive, high-performance UIs.
@@ -269,8 +114,9 @@
                         <strong>API-Driven Development –</strong>Ensuring responsive designs for all devices.
                     </li>
                 </ul>
-            </p>
-        </section>
+                </p>
+            </section>
+        </main>
        
         <!-- Footer-->
         <footer class="footer text-center">
