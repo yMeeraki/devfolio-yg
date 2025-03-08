@@ -186,24 +186,21 @@ function displayProjects(projects) {
 
 //  Function -> Filter
 function filterProject() {
-
-  //  Adding Filtered Projects for Display
-  const selectedCategoryProjects = []
-  allProjects.forEach((project) => {
-    console.log(selectProjectCategory.value)
-    if (project.category === selectProjectCategory.value) {
-      
-      selectedCategoryProjects.push(project)
-    }
-  })
-
-  console.log(selectedCategoryProjects)
   
   //  Displaying Filtered Projects
   if (selectProjectCategory.value === 'All') {
     displayProjects(allProjects)
   }
   else {
+      //  Adding Filtered Projects for Display
+      const selectedCategoryProjects = []
+      allProjects.forEach((project) => {
+      console.log(selectProjectCategory.value)
+      if (project.category === selectProjectCategory.value) {
+        
+        selectedCategoryProjects.push(project)
+      }
+    })
     displayProjects(selectedCategoryProjects)
   }
 }
@@ -211,26 +208,3 @@ function filterProject() {
 
 
 selectProjectCategory.addEventListener('change',filterProject)
-
-
-
-// {/* <div class="col"
-// <div class="card text-bg-dark border-info h-100 justify-content-center align-items-center p-3">
-//     <div class="card-header">
-//         Frontend Project
-//     </div>
-//     <img src="https://placehold.co/600x400?text=Hello\nWorld" class="card-img-top" alt="...">
-//     <div class="card-body">
-//         <h5 class="card-title">Name</h5>
-//         <p class="card-text">Description</p>
-//         <p class="card-text">Tech Used</p>
-//     </div>
-//     <div class="card-footer">
-
-//             <a href="#" class="btn btn-outline-info">View Demo</a>
-
-//             <a href="#" class="btn btn-outline-light">View Repo</a>
-
-//     </div>
-// </div>
-// </div>
