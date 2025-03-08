@@ -108,10 +108,13 @@ const allProjects = [
 ];
 
 // console.log(allProjects);
-const row = document.querySelector("#row");
+const row = document.querySelector("#row"); //  DOM -> Display Project list
+const selectProjectCategory = document.querySelector("#filter-projects")  //  DOM -> Filter
 
 displayProjects(allProjects);
 
+
+// Function -> Display Projects
 function displayProjects(projects) {
     row.textContent = '';
   projects.forEach((project) => {
@@ -180,6 +183,34 @@ function displayProjects(projects) {
         row.appendChild(col);
   });
 }
+
+//  Function -> Filter
+function filterProject() {
+
+  //  Adding Filtered Projects for Display
+  const selectedCategoryProjects = []
+  allProjects.forEach((project) => {
+    console.log(selectProjectCategory.value)
+    if (project.category === selectProjectCategory.value) {
+      
+      selectedCategoryProjects.push(project)
+    }
+  })
+
+  console.log(selectedCategoryProjects)
+  
+  //  Displaying Filtered Projects
+  if (selectProjectCategory.value === 'All') {
+    displayProjects(allProjects)
+  }
+  else {
+    displayProjects(selectedCategoryProjects)
+  }
+}
+
+
+
+selectProjectCategory.addEventListener('change',filterProject)
 
 
 
