@@ -152,7 +152,7 @@ function displayProjects(projects) {
         techUsed.textContent = `Tech Used: ${project.techUsed}`;
 
         const cardFooter = document.createElement("div");
-        cardFooter.className = "card-footer";
+        cardFooter.className = "card-footer btn-grp";
 
         const demoButton = document.createElement("a");
         demoButton.href = project.demoLink;
